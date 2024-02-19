@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    
+    <title>DINNER</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script>
+let dinnerlist = [
+    {
+    idMeal: 1,
+    mealName: 'soup',
+    }
+    ,
+  {
+    idMeal: 2,
+    mealName: 'rice',
+    
+  },
+  {
+    idMeal: 3,
+    mealName: 'roast chicken',
+    
+  },
+  {
+    idMeal: 4,
+    mealName: 'skip dinner',
+    
+  },
+];
+
+function GetValue() {
+  var random_num = Math.floor(Math.random() * dinnerlist.length);
+  var random =  dinnerlist[random_num].mealName 
+  alert(random)
+  
+}
+</script>
+<body>
+
+  <a href="SELECT_PAGE.html">
+  <div class = buttonanimation>
+    
+    <button>back</button>
+    </div>
+   </a>
+
+  <div class="box" >
+    <h3>press the button to genrate dinner</h3>
+</div>
+
+  <div class = buttonanimation>
+    <div class = container2>
+    <button ><input  type = "button"id="dinner" value="dinner " onclick="GetValue();" /></button>
+    </div>
+    </div>
+    
+    <div class = containerworkout>
+    <div class="box" >
+      <h3>now that you have eaten dinner lets genrate a workout</h3>
+  </div>
+  </div>
+   
+  <a href="workout.html">
+  <div class = buttonanimation>
+    <div class = containerworkout2>
+    <centre><button>workout</button></centre>
+    </div>
+</div>
+</a>
+
+
+</body>
+</html>

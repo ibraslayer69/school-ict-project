@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    
+    <title>WORKOUT</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script>
+let workoutlist = [
+    {
+    idwork: 1,
+    workoutName: '30 min treadmill,25 pushups',
+    }
+    ,
+  {
+    idwork: 2,
+    workoutName: '1hr treadmill,30 situps',
+    
+  },
+  {
+    idwork: 3,
+    workoutName: 'no treadmill, 40 pushups,40 situps,50 jumpingjacks',
+    
+  },
+  {
+    idwork: 4,
+    workoutName: 'skip workout',
+    
+  },
+];
+
+function GetValue() {
+  var random_num = Math.floor(Math.random() * workoutlist.length);
+  var random =  workoutlist[random_num].workoutName 
+  alert(random)
+  
+}
+</script>
+<body>
+
+  <a href="SELECT_PAGE.html">
+  <div class = buttonanimation>
+    
+    <button>back</button>
+    </div>
+   </a>
+
+  <div class="box" >
+    <h3>press the button to genrate a workout</h3>
+</div>
+
+  <div class = buttonanimation>
+    <div class = container2>
+    <button ><input  type = "button"id="workout" value="workout " onclick="GetValue();" /></button>
+    </div>
+    </div>
+    
+    
+
+</body>
+</html>
